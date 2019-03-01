@@ -20,7 +20,7 @@ module.exports = function() {
             function setSmarteditProperties(conf, addEntry) {
                 if (addEntry) {
                     conf.entry = {
-                        'trainingsmartedit': './jsTarget/web/features/trainingsmartedit/trainingsmarteditModule.ts'
+                        'trainingsmartedit': './jsTarget/web/features/trainingsmartedit/trainingsmartedit.ts'
                     };
                 }
                 //seems necessary on case sensitive OS to specify aliases in addition to paths in tsconfig
@@ -34,7 +34,7 @@ module.exports = function() {
             function setSmarteditContainerProperties(conf, addEntry) {
                 if (addEntry) { // don't add entries for any karma webpacks
                     conf.entry = {
-                        'trainingsmarteditContainer': './jsTarget/web/features/trainingsmarteditContainer/trainingsmarteditcontainerModule.ts'
+                        'trainingsmarteditContainer': './jsTarget/web/features/trainingsmarteditContainer/trainingsmarteditcontainer.ts'
                     };
                 }
                 //seems necessary on case sensitive OS to specify aliases in addition to paths in tsconfig

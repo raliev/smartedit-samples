@@ -82,7 +82,7 @@ module.exports = function(grunt) {
 
                 // list of files to exclude
                 exclude: lodash.union(conf.generateSmarteditContainerKarmaConf.data.exclude, [
-                    'jsTarget/web/features/trainingsmarteditContainer/trainingsmarteditcontainerModule.ts',
+                    'jsTarget/web/features/trainingsmarteditContainer/trainingsmarteditcontainer.ts',
                     '**/*.d.ts',
                     '*.d.ts'
                 ]),

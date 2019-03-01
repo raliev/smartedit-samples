@@ -10,6 +10,7 @@
  */
 module.exports = function(grunt) {
 
+
     require('time-grunt')(grunt);
     require('./smartedit-build')(grunt).load();
 
@@ -29,7 +30,7 @@ module.exports = function(grunt) {
 
     // webpack
     grunt.registerTask('webpackDev', ['webpack:devSmartedit', 'webpack:devSmarteditContainer']);
-    grunt.registerTask('webpackProd', ['webpack:prodSmartedit', 'webpack:prodSmarteditContainer']);
+    grunt.registerTask('webpackProd', ['webpack:devSmartedit', 'webpack:devSmarteditContainer']);
 
     // -------------------------------------------------------------------------------------------------
     // Linting
