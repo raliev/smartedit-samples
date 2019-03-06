@@ -25,7 +25,7 @@
             };
         })
         .controller('myWizardController', function() {
-              this.getWizardConfig = function() {
+            this.getWizardConfig = function() {
                 var wizardConfig = {
                     /*isFormValid: this.isFormValid.bind(this),
                     onNext: this.onNext.bind(this),
@@ -34,11 +34,11 @@
                     steps: [{
                         id: "step1",
                         name: 'Step1',
-                        title: 'Step 1',
+                        title: 'Step',
                         templateUrl: 'step1.html'
                     }]
                 };
                 return wizardConfig;
-            }.bind(this);            
+            }.bind(this);
         });
 })();
